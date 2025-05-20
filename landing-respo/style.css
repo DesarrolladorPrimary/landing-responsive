@@ -1,3 +1,5 @@
+/* Pc sena */
+
 * {
     padding: 0;
     margin: 0;
@@ -35,6 +37,10 @@ header nav ul li:not(:first-child) a:hover {
 
 header nav ul li:first-child {
     transform: translateX(-26rem);
+}
+
+.icon-h {
+    display: none;
 }
 
 .sec_left,
@@ -142,9 +148,68 @@ footer {
     color: #3498db;
 }
 
+/* Mi Portatil */
+@media (min-width:1025px) and (max-width:1600px) {
+
+
+    header nav ul li:first-child {
+        transform: translateX(-12rem);
+    }
+
+
+    .sec_left {
+        position: relative;
+        top: 40px;
+        left: 0px;
+        border: 2px solid rgb(76, 139, 235);
+        border-radius: 10px;
+        background-color: rgba(26, 141, 236, 0.144);
+        text-align: start;
+        width: 40rem;
+        height: 30rem;
+        margin-left: 4rem;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+
+    .sec_left h2 {
+        margin-top: 3rem;
+        margin-left: 3rem;
+        font-size: 40px;
+    }
+
+    .sec_left button {
+        display: none;
+        color: #fff;
+        background-color: #21618c;
+        border: none;
+        border-radius: 25px;
+        padding: 12px 32px;
+        font-size: 18px;
+        font-weight: bold;
+        cursor: pointer;
+        box-shadow: 0 4px 12px rgba(33, 97, 140, 0.15);
+        transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+        margin-top: 2rem;
+        margin-left: 4rem;
+    }
+
+    .sec_rigth {
+        position: relative;
+        top: 2rem;
+        left: 4rem;
+    }
+
+    .sec_rigth img {
+        height: 30rem;
+        width: 44rem;
+        box-shadow: 3px 3px 10px;
+    }
+}
+
+/* Tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     header {
-        height: 70px;
+        height: 80px;
         background-color: rgb(22, 108, 179);
     }
 
@@ -172,11 +237,111 @@ footer {
     header nav ul li:first-child {
         transform: none;
         position: relative;
-        top: 2rem;
+        top: 2.5rem;
         left: 1rem;
     }
 
     .sec_left {
         margin-left: auto;
+        height: 31rem;
     }
+
+    .sec_left h2 {
+        margin-top: 2rem;
+        margin-left: 3rem;
+        font-size: 40px;
+    }
+
+    .sec_left button {
+        margin-top: 3rem;
+    }
+
+    .sec_rigth {
+        top: 6rem;
+        left: 4rem;
+    }
+
+    .sec_rigth img {
+        height: 20rem;
+        width: 40rem;
+        box-shadow: 3px 3px 10px;
+        margin-bottom: 10rem;
+    }
+
+}
+
+/* Movil */
+@media (max-width: 768px) {
+    .icon-h {
+        display: block;
+        transform: translateX(10px) translateY(5px);
+    }
+
+    #nav-ham {
+        display: none;
+    }
+
+    #nav-ham:target {
+        display: block;
+    }
+
+    #nav-ham a {
+        text-decoration: none;
+    }
+
+    header {
+        height: 2rem;
+        position: relative;
+    }
+
+    nav {
+        width: 100px;
+        height: 20rem;
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        z-index: 1000;
+    }
+
+
+    nav ul {
+        position: relative;
+        bottom: 30px;
+        width: 90px;
+    }
+
+
+    nav ul li {
+        margin-left: 10px;
+        margin-right: 20px;
+        display: block;
+    }
+
+    .sec_left {
+        position: relative;
+        top: 40px;
+        left: auto;
+        right: 7rem;
+        border: 2px solid rgb(76, 139, 235);
+        border-radius: 10px;
+        background-color: rgba(26, 141, 236, 0.144);
+        text-align: start;
+        width: 20rem;
+        height: 50rem;
+        margin-left: 10rem;
+        transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+    }
+    
+    .sec_left h2 {
+        margin-top: 1rem;
+        margin-left: 2rem;
+        font-size: 40px;
+    }
+
+    .sec_rigth {
+        display: none;
+        left: 10px;
+        margin-bottom: 4rem;
+    }
+    
 }
