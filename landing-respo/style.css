@@ -1,0 +1,161 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    height: 70px;
+    background-color: rgb(22, 108, 179);
+}
+
+
+nav {
+    border-bottom: 2px inherit black ;
+    height: 50px;
+    text-align: center;
+    background-color: rgb(39, 153, 247);
+    box-shadow: 0 2px 10px  rgba(0, 0, 0, 0.26);
+}
+
+header nav li {
+    margin-top: 18px;
+    display: inline-block;
+}
+
+header nav li a{
+    color: rgb(90, 0, 173);
+    text-decoration: none;
+    padding: 60px;
+}
+
+header nav ul li:not(:first-child) a:hover {
+    font-size: 20px;
+    color: white;
+}
+
+header nav ul li:first-child{
+    transform: translateX(-26rem);
+}
+
+
+
+
+
+
+.sec_left, .sec_rigth {
+    display: inline-block;
+    vertical-align: top; 
+    width: 49%;         
+    box-sizing: border-box;
+    
+}
+
+.sec_left {
+    position: relative;
+    top: 40px;
+    left: 50px;
+    border: 2px solid rgb(76, 139, 235);
+    border-radius: 10px;
+    background-color: rgba(26, 141, 236, 0.144);
+    text-align: start;
+    width: 40rem;
+    height: 50rem;
+    margin-left: 10rem;
+    transition: 
+        background 0.3s, 
+        box-shadow 0.3s, 
+        transform 0.3s; 
+}
+
+.sec_left:hover {
+    background-color: #3498db; 
+    box-shadow: 0 16px 32px rgba(52, 152, 219, 0.4);
+    border-color: #21618c;
+    color: #fff; 
+    transform: translateY(-15px); 
+}
+
+.sec_left:hover button{
+    transition: 1s;
+    display: block;
+}
+
+.sec_left h2 {
+    margin-top: 7rem;
+    margin-left: 3rem;
+    font-size: 40px;
+    
+}
+
+.sec_left p {
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 2rem;
+    font-size: 18px;
+}
+
+
+.sec_left button {
+    display: none;
+    color: #fff;
+    background-color: #21618c;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 32px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(33, 97, 140, 0.15);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+    margin-top: 2rem;
+    margin-left: 4rem;
+}
+
+
+
+.sec_rigth {
+    position: relative;
+    top: 6rem;
+    left: 7rem;
+}
+
+.sec_rigth img {
+    height: 40rem;
+    width: 50rem;
+    box-shadow: 3px 3px 10px ;
+}
+
+footer {
+    background: #21618c;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0 1rem 0;
+    margin-top: 4rem;
+}
+
+.footer-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.footer-social {
+    margin-top: 10px;
+}
+
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 1.3rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #3498db;
+}
+
+
+
+
