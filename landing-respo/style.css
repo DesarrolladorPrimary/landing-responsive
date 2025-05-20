@@ -1,22 +1,20 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
-
 
 header {
     height: 70px;
     background-color: rgb(22, 108, 179);
 }
 
-
 nav {
-    border-bottom: 2px inherit black ;
+    border-bottom: 2px inherit black;
     height: 50px;
     text-align: center;
     background-color: rgb(39, 153, 247);
-    box-shadow: 0 2px 10px  rgba(0, 0, 0, 0.26);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
 }
 
 header nav li {
@@ -24,7 +22,7 @@ header nav li {
     display: inline-block;
 }
 
-header nav li a{
+header nav li a {
     color: rgb(90, 0, 173);
     text-decoration: none;
     padding: 60px;
@@ -35,21 +33,16 @@ header nav ul li:not(:first-child) a:hover {
     color: white;
 }
 
-header nav ul li:first-child{
+header nav ul li:first-child {
     transform: translateX(-26rem);
 }
 
-
-
-
-
-
-.sec_left, .sec_rigth {
+.sec_left,
+.sec_rigth {
     display: inline-block;
-    vertical-align: top; 
-    width: 49%;         
+    vertical-align: top;
+    width: 49%;
     box-sizing: border-box;
-    
 }
 
 .sec_left {
@@ -63,21 +56,18 @@ header nav ul li:first-child{
     width: 40rem;
     height: 50rem;
     margin-left: 10rem;
-    transition: 
-        background 0.3s, 
-        box-shadow 0.3s, 
-        transform 0.3s; 
+    transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
 .sec_left:hover {
-    background-color: #3498db; 
+    background-color: #3498db;
     box-shadow: 0 16px 32px rgba(52, 152, 219, 0.4);
     border-color: #21618c;
-    color: #fff; 
-    transform: translateY(-15px); 
+    color: #fff;
+    transform: translateY(-15px);
 }
 
-.sec_left:hover button{
+.sec_left:hover button {
     transition: 1s;
     display: block;
 }
@@ -86,7 +76,6 @@ header nav ul li:first-child{
     margin-top: 7rem;
     margin-left: 3rem;
     font-size: 40px;
-    
 }
 
 .sec_left p {
@@ -95,7 +84,6 @@ header nav ul li:first-child{
     margin-right: 2rem;
     font-size: 18px;
 }
-
 
 .sec_left button {
     display: none;
@@ -113,8 +101,6 @@ header nav ul li:first-child{
     margin-left: 4rem;
 }
 
-
-
 .sec_rigth {
     position: relative;
     top: 6rem;
@@ -124,7 +110,7 @@ header nav ul li:first-child{
 .sec_rigth img {
     height: 40rem;
     width: 50rem;
-    box-shadow: 3px 3px 10px ;
+    box-shadow: 3px 3px 10px;
 }
 
 footer {
@@ -156,6 +142,41 @@ footer {
     color: #3498db;
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        height: 70px;
+        background-color: rgb(22, 108, 179);
+    }
 
+    nav {
+        border-bottom: 2px inherit black;
+        height: 50px;
+        text-align: center;
+        background-color: rgb(39, 153, 247);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
+    }
 
+    header nav li {
+        position: relative;
+        right: 50px;
+        margin-top: 18px;
+        display: inline-block;
+    }
 
+    header nav li a {
+        color: rgb(90, 0, 173);
+        text-decoration: none;
+        padding: 30px;
+    }
+
+    header nav ul li:first-child {
+        transform: none;
+        position: relative;
+        top: 2rem;
+        left: 1rem;
+    }
+
+    .sec_left {
+        margin-left: auto;
+    }
+}
