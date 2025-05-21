@@ -1,3 +1,4 @@
+/* Reseteo universal de márgenes, paddings y box-sizing para un control total del diseño */
 *{
     margin: 0;
     padding: 0;
@@ -5,81 +6,90 @@
 }
 
 
+/* Estilos para el encabezado */
 header {
-    background-color: white;
-    position: relative;
-    top: 10px;
-    border-radius: 10px;
-    margin: 0 auto;
-    text-align: center;
-    border: 1px solid black;
-    width: 200px;
+    background-color: white; /* Fondo blanco para el header */
+    position: relative; /* Posicionamiento relativo para ajustes finos */
+    top: 10px; /* Pequeño desplazamiento hacia abajo */
+    border-radius: 10px; /* Bordes redondeados para un look suave */
+    margin: 0 auto; /* Centrado horizontal automático */
+    text-align: center; /* Alineación del texto al centro */
+    border: 1px solid black; /* Borde sutil */
+    width: 200px; /* Ancho fijo del header */
 }
 
 
 
+/* Estilos para el cuerpo de la página */
 body {
-    background-color: antiquewhite;
+    background-color: antiquewhite; /* Color de fondo general de la página */
 }
 
 
+/* Estilos para el contenido principal */
 main {
-    margin: 0 auto;
-    border: 2px solid black;
-    width: 40rem;
-    height: 20rem;
-    transition: 1s;
+    margin: 0 auto; /* Centrado horizontal automático */
+    border: 2px solid black; /* Borde más grueso para destacar el contenido principal */
+    width: 40rem; /* Ancho del contenedor principal */
+    height: 20rem; /* Alto del contenedor principal */
+    transition: 1s; /* Transición suave para cambios de tamaño */
 }
 
 
 
+/* Estilos para los elementos de landing (secciones o tarjetas) */
 .landing1,
 .landing2{
-    position: relative;
-    top: 80px;
-    left: 90px;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 20px;
-    margin: 20px;
-    display: inline-block;
-    background-color: azure;
-    box-shadow: 5px 5px 10px 1px black;
-    transition: 1s;
+    position: relative; /* Posicionamiento relativo */
+    top: 80px; /* Desplazamiento hacia abajo */
+    left: 90px; /* Desplazamiento hacia la derecha */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid black; /* Borde */
+    padding: 20px; /* Relleno interno */
+    margin: 20px; /* Margen externo */
+    display: inline-block; /* Para que se coloquen uno al lado del otro si hay espacio */
+    background-color: azure; /* Color de fondo */
+    box-shadow: 5px 5px 10px 1px black; /* Sombra para dar profundidad */
+    transition: 1s; /* Transición suave para efectos */
 }
 
+/* Estilos para los enlaces dentro de los elementos de landing */
 .landing1 a,
 .landing2 a{
-    text-decoration: none;
-    color: black;
+    text-decoration: none; /* Quitar el subrayado de los enlaces */
+    color: black; /* Color del texto de los enlaces */
 }
 
 
+/* Estilos para el efecto hover en los elementos de landing */
 .landing1:hover,
 .landing2:hover{
     transition: 
-        color 0.3s
-        padding 0.3s;
-    padding: 30px;
+        color 0.3s, /* Transición suave para el color */
+        padding 0.3s; /* Transición suave para el padding */
+    padding: 30px; /* Aumentar el padding en hover para un efecto de realce */
 }
 
 
+/* Media Query para pantallas pequeñas (responsividad) */
 @media (max-width:680px) {
     
 
+    /* Ajustes para el 'main' en pantallas pequeñas */
     main{
-        transition: 1s;
-        width: 400px;
+        transition: 1s; /* Transición suave para el cambio de ancho */
+        width: 400px; /* Ancho ajustado para pantallas más pequeñas */
     }
 
+    /* Ajustes para los elementos de landing en pantallas pequeñas */
     .landing1,
     .landing2{
-        transition: 1;
-        top: 60px;
-        left: 20px;
-        text-align: center;
-        padding: auto;
-        width: 20rem;
-        display: block;
+        transition: 1s; /* Transición suave (corregido de '1' a '1s') */
+        top: 60px; /* Ajuste del desplazamiento superior */
+        left: 20px; /* Ajuste del desplazamiento izquierdo */
+        text-align: center; /* Centrar el texto */
+        padding: auto; /* Padding automático (aunque 'auto' no es un valor estándar para padding, se mantiene si es intencional) */
+        width: 20rem; /* Ancho ajustado */
+        display: block; /* Para que ocupen todo el ancho disponible y se apilen verticalmente */
     }
 }

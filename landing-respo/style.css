@@ -1,4 +1,4 @@
-/* Pc sena */
+/* Estilos Generales para PC Sena */
 
 * {
     padding: 0;
@@ -6,11 +6,13 @@
     box-sizing: border-box;
 }
 
+/* Estilos del Encabezado */
 header {
     height: 70px;
     background-color: rgb(22, 108, 179);
 }
 
+/* Estilos de la Barra de Navegación */
 nav {
     border-bottom: 2px inherit black;
     height: 50px;
@@ -19,38 +21,45 @@ nav {
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
 }
 
+/* Estilos de los Elementos de Lista en la Navegación del Encabezado */
 header nav li {
     margin-top: 18px;
     display: inline-block;
 }
 
+/* Estilos de los Enlaces en la Navegación del Encabezado */
 header nav li a {
     color: rgb(90, 0, 173);
     text-decoration: none;
     padding: 60px;
 }
 
+/* Estilos al Pasar el Ratón sobre los Enlaces de Navegación (excepto el primero) */
 header nav ul li:not(:first-child) a:hover {
     font-size: 20px;
     color: white;
 }
 
+/* Estilos del Primer Elemento de Lista en la Navegación (logo o similar) */
 header nav ul li:first-child {
     transform: translateX(-26rem);
 }
 
+/* Estilo para el Icono de Hamburguesa (inicialmente oculto) */
 .icon-h {
     display: none;
 }
 
+/* Estilos para las Secciones Izquierda y Derecha */
 .sec_left,
-.sec_rigth {
+.sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
     display: inline-block;
     vertical-align: top;
     width: 49%;
     box-sizing: border-box;
 }
 
+/* Estilos de la Sección Izquierda */
 .sec_left {
     position: relative;
     top: 40px;
@@ -65,6 +74,7 @@ header nav ul li:first-child {
     transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
 }
 
+/* Estilos al Pasar el Ratón sobre la Sección Izquierda */
 .sec_left:hover {
     background-color: #3498db;
     box-shadow: 0 16px 32px rgba(52, 152, 219, 0.4);
@@ -73,17 +83,20 @@ header nav ul li:first-child {
     transform: translateY(-15px);
 }
 
+/* Estilos del Botón dentro de la Sección Izquierda al Pasar el Ratón sobre la Sección */
 .sec_left:hover button {
     transition: 1s;
     display: block;
 }
 
+/* Estilos del Título H2 en la Sección Izquierda */
 .sec_left h2 {
     margin-top: 7rem;
     margin-left: 3rem;
     font-size: 40px;
 }
 
+/* Estilos del Párrafo en la Sección Izquierda */
 .sec_left p {
     margin-top: 1rem;
     margin-left: 3rem;
@@ -91,6 +104,7 @@ header nav ul li:first-child {
     font-size: 18px;
 }
 
+/* Estilos del Botón en la Sección Izquierda (inicialmente oculto) */
 .sec_left button {
     display: none;
     color: #fff;
@@ -107,18 +121,21 @@ header nav ul li:first-child {
     margin-left: 4rem;
 }
 
-.sec_rigth {
+/* Estilos de la Sección Derecha */
+.sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
     position: relative;
     top: 6rem;
     left: 7rem;
 }
 
-.sec_rigth img {
+/* Estilos de la Imagen en la Sección Derecha */
+.sec_rigth img { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
     height: 40rem;
     width: 50rem;
     box-shadow: 3px 3px 10px;
 }
 
+/* Estilos del Pie de Página */
 footer {
     background: #21618c;
     color: #fff;
@@ -127,15 +144,18 @@ footer {
     margin-top: 4rem;
 }
 
+/* Estilos del Contenido del Pie de Página */
 .footer-content {
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Estilos de los Iconos Sociales en el Pie de Página */
 .footer-social {
     margin-top: 10px;
 }
 
+/* Estilos de los Enlaces Sociales en el Pie de Página */
 .footer-social a {
     color: #fff;
     margin: 0 10px;
@@ -144,19 +164,20 @@ footer {
     transition: color 0.3s;
 }
 
+/* Estilos al Pasar el Ratón sobre los Enlaces Sociales */
 .footer-social a:hover {
     color: #3498db;
 }
 
-/* Mi Portatil */
+/* Media Query para Portátiles (Mi Portatil) */
 @media (min-width:1025px) and (max-width:1600px) {
 
-
+    /* Ajuste del Primer Elemento de Lista en la Navegación para Portátiles */
     header nav ul li:first-child {
         transform: translateX(-12rem);
     }
 
-
+    /* Ajustes de la Sección Izquierda para Portátiles */
     .sec_left {
         position: relative;
         top: 40px;
@@ -166,17 +187,19 @@ footer {
         background-color: rgba(26, 141, 236, 0.144);
         text-align: start;
         width: 40rem;
-        height: 30rem;
+        height: 30rem; /* Altura reducida para portátiles */
         margin-left: 4rem;
         transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
     }
 
+    /* Ajustes del Título H2 en la Sección Izquierda para Portátiles */
     .sec_left h2 {
         margin-top: 3rem;
         margin-left: 3rem;
         font-size: 40px;
     }
 
+    /* Ajustes del Botón en la Sección Izquierda para Portátiles */
     .sec_left button {
         display: none;
         color: #fff;
@@ -193,26 +216,30 @@ footer {
         margin-left: 4rem;
     }
 
-    .sec_rigth {
+    /* Ajustes de la Sección Derecha para Portátiles */
+    .sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
         position: relative;
         top: 2rem;
         left: 4rem;
     }
 
-    .sec_rigth img {
-        height: 30rem;
-        width: 44rem;
+    /* Ajustes de la Imagen en la Sección Derecha para Portátiles */
+    .sec_rigth img { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+        height: 30rem; /* Altura reducida */
+        width: 44rem;  /* Ancho reducido */
         box-shadow: 3px 3px 10px;
     }
 }
 
-/* Tablet */
+/* Media Query para Tabletas */
 @media (min-width: 768px) and (max-width: 1024px) {
+    /* Ajustes del Encabezado para Tabletas */
     header {
         height: 80px;
         background-color: rgb(22, 108, 179);
     }
 
+    /* Ajustes de la Navegación para Tabletas */
     nav {
         border-bottom: 2px inherit black;
         height: 50px;
@@ -221,6 +248,7 @@ footer {
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.26);
     }
 
+    /* Ajustes de los Elementos de Lista en la Navegación para Tabletas */
     header nav li {
         position: relative;
         right: 50px;
@@ -228,117 +256,133 @@ footer {
         display: inline-block;
     }
 
+    /* Ajustes de los Enlaces en la Navegación para Tabletas */
     header nav li a {
         color: rgb(90, 0, 173);
         text-decoration: none;
-        padding: 30px;
+        padding: 30px; /* Padding reducido */
     }
 
+    /* Ajustes del Primer Elemento de Lista en la Navegación para Tabletas */
     header nav ul li:first-child {
-        transform: none;
+        transform: none; /* Se quita la transformación */
         position: relative;
         top: 2.5rem;
         left: 1rem;
     }
 
+    /* Ajustes de la Sección Izquierda para Tabletas */
     .sec_left {
-        margin-left: auto;
+        margin-left: auto; /* Centrado o ajuste automático del margen */
         height: 31rem;
     }
 
+    /* Ajustes del Título H2 en la Sección Izquierda para Tabletas */
     .sec_left h2 {
         margin-top: 2rem;
         margin-left: 3rem;
         font-size: 40px;
     }
 
+    /* Ajustes del Botón en la Sección Izquierda para Tabletas */
     .sec_left button {
         margin-top: 3rem;
     }
 
-    .sec_rigth {
+    /* Ajustes de la Sección Derecha para Tabletas */
+    .sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
         top: 6rem;
         left: 4rem;
     }
 
-    .sec_rigth img {
-        height: 20rem;
-        width: 40rem;
+    /* Ajustes de la Imagen en la Sección Derecha para Tabletas */
+    .sec_rigth img { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+        height: 20rem; /* Altura muy reducida */
+        width: 40rem;  /* Ancho reducido */
         box-shadow: 3px 3px 10px;
         margin-bottom: 10rem;
     }
 
 }
 
-/* Movil */
+/* Media Query para Móviles */
 @media (max-width: 768px) {
+    /* Mostrar Icono de Hamburguesa en Móviles */
     .icon-h {
         display: block;
         transform: translateX(10px) translateY(5px);
     }
 
+    /* Ocultar Navegación Principal por Defecto en Móviles */
     #nav-ham {
         display: none;
     }
 
+    /* Mostrar Navegación al Hacer Clic en el Icono (usando :target) */
     #nav-ham:target {
         display: block;
     }
 
+    /* Estilos de los Enlaces dentro del Menú Hamburguesa */
     #nav-ham a {
         text-decoration: none;
     }
 
+    /* Ajustes del Encabezado para Móviles */
     header {
-        height: 2rem;
+        height: 2rem; /* Altura muy reducida */
         position: relative;
     }
 
+    /* Estilos de la Navegación Desplegable para Móviles */
     nav {
         width: 100px;
         height: 20rem;
         position: absolute;
         top: 2rem;
         left: 0;
-        z-index: 1000;
+        z-index: 1000; /* Asegura que esté por encima de otros elementos */
     }
 
-
+    /* Ajustes de la Lista de Navegación para Móviles */
     nav ul {
         position: relative;
         bottom: 30px;
         width: 90px;
     }
 
-
+    /* Ajustes de los Elementos de Lista en la Navegación para Móviles */
     nav ul li {
         margin-left: 10px;
         margin-right: 20px;
-        display: block;
+        display: block; /* Elementos en bloque, uno debajo del otro */
     }
 
+    /* Ajustes de la Sección Izquierda para Móviles */
     .sec_left {
         position: relative;
         top: 40px;
-        left: auto;
-        right: 7rem;
+        left: auto; /* Se quita el posicionamiento izquierdo fijo */
+        right: 7rem; /* Ajuste de posición derecha */
         border: 2px solid rgb(76, 139, 235);
         border-radius: 10px;
         background-color: rgba(26, 141, 236, 0.144);
         text-align: start;
-        width: 20rem;
+        width: 20rem; /* Ancho reducido significativamente */
         height: 50rem;
         margin-left: 10rem;
         transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
     }
     
+    /* Ajustes del Título H2 en la Sección Izquierda para Móviles */
     .sec_left h2 {
         margin-top: 1rem;
         margin-left: 2rem;
         font-size: 40px;
     }
 
-    .sec_rigth {
+    /* Ocultar Sección Derecha en Móviles */
+    .sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
         display: none;
         left: 10px;
         margin-bottom: 4rem;
