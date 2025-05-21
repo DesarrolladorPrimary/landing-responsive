@@ -1,0 +1,364 @@
+/* Estilos generales para el cuerpo de la página */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+/* Estilos para el encabezado de la página */
+/* Ajustes para el encabezado: altura automática y centrado */
+    header {
+    display: inline-block;
+    height: 70px;
+    align-items: center;
+    width: 100%;
+}
+
+/* Contenedor para la parte izquierda del encabezado (logo y nombre de la empresa) */
+/* El logo y nombre de la empresa ocupan todo el ancho y se apilan */
+    .header-left { 
+    display: inline-block;
+}
+/* Estilos para la imagen del logo en el encabezado */
+.header-left img{
+    height: 50px;
+    margin-left: 200px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 25px;
+}
+
+/* Estilos para el nombre de la empresa en el encabezado */
+.company-name{ 
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 5px;
+    margin-top: 60px;
+    margin-left: 2px;
+    font-size: 30px;
+}
+
+/* Contenedor para la parte derecha del encabezado (enlaces de navegación) */
+.header-right{ 
+    float: right;
+    line-height: 80px;
+    margin-right: 200px;
+    margin-top: 25px;
+}
+
+/* Estilos para los enlaces de navegación en el encabezado */
+/* Ajuste del margen y tamaño de fuente de los enlaces de navegación */
+    /* Ajustes de los enlaces de navegación: se muestran en línea (para centrar), márgenes y tamaño de fuente */
+    /* Los enlaces de navegación se muestran uno por línea, centrados y con ancho limitado */
+    .header-right a { 
+    /* color del texto de los links */
+    color: rgb(173, 173, 173);
+    /* para que se pongan uno al lado del otro */
+    float: left;
+    /* tipo de letra */
+    font-family: Arial, Helvetica, sans-serif;
+    /* tamaño de la letra */
+    font-size: 20px;
+    /* espacio a la derecha */
+    margin-right: 100px;
+    /* espacio arriba */
+    margin-top: 0;
+    /* sin relleno */
+    padding: 0;
+    /* quitar la linea de abajo */
+    text-decoration: none;
+}
+
+/* Estilos específicos para el botón de navegación (ej. 'Comenzar') */
+#boton-navegacion{
+    /* color de fondo del boton */
+    background-color: rgb(0, 153, 255);
+    /* para que ocupe su linea */
+    display: block;
+    /* color del texto del boton */
+    color: white;
+    /* bordes redondos */
+    border-radius: 30px;
+    /* espacio dentro del boton */
+    padding: 4px 20px;
+}
+
+/* --- ESTILOS PARA EL CONTENIDO PRINCIPAL DE LA PÁGINA --- */
+/* estilos para el contenido principal */
+/* Contenedor principal del contenido de la página */
+.main-content{ 
+    /* espacio a la izquierda */
+    margin-left: 200px;
+    /* espacio arriba */
+    margin-top: 300px;
+}
+
+/* estilos para los titulos h1 dentro del contenido */
+/* Estilos para los títulos principales (H1) dentro del contenido */
+.main-content h1{
+    /* tamaño de la letra */
+    font-size: 50px;
+    /* para que ocupe su linea */
+    display: block;
+    /* esto hace la letra negrita */
+    font-weight: bold;
+}
+
+/* esto es para el texto de abajo */
+/* Estilos para el subtítulo o texto secundario debajo del H1 */
+.headline-subtitle{
+    /* moverlo un poco para arriba */
+    margin-top: -20px;
+}
+
+/* esto es para los parrafos */
+/* Estilos generales para los párrafos dentro del contenido principal */
+.main-content p{ 
+    /* tipo de letra */
+    font-family: sans-serif;
+    /* tamaño de la letra */
+    font-size: 20px;
+    /* color del texto */
+    color: rgb(173, 173, 173);
+}
+
+/* esto es para el parrafo de abajo */
+/* Estilos específicos para el párrafo de descripción */
+.description-paragraph{ 
+    /* espacio abajo */
+    margin-bottom: 60px;
+}
+
+/* esto es para el boton de empezar */
+/* Estilos para el botón de 'Empezar' o llamada a la acción principal */
+.start-button{ 
+    /* quitar la linea de abajo */
+    text-decoration: none;
+    /* tipo de letra */
+    font-family: sans-serif;
+    color: white;
+    background-color: rgb(118, 200, 252);
+    line-height: 20px;
+    padding: 15px 30px;
+    border-radius: 15px;
+}
+
+/* Estilos para la imagen principal o 'hero image' */
+div .hero-image{ 
+    height: 600px;
+    float: right;
+    margin-top: -420px;
+    margin-right: 150px;
+}
+
+/* --- MEDIA QUERIES PARA ADAPTAR EL DISEÑO A DIFERENTES TAMAÑOS DE PANTALLA --- */
+
+/* Estilos para tabletas y pantallas medianas (hasta 1024px de ancho) */
+@media (max-width: 1024px) {
+    /* Ajustes generales para pantallas de hasta 1024px */
+    /* Ajuste del margen izquierdo del logo */
+    /* Ajustes del logo: sin margen izquierdo, menor altura y margen superior */
+    /* Ajuste de altura y margen superior del logo */
+    .header-left img {
+        margin-left: 50px;
+    }
+    /* Ajuste del margen derecho de los enlaces de navegación */
+    /* Los enlaces de navegación ocupan todo el ancho, se centran y se quita el float */
+    .header-right {
+        margin-right: 50px;
+    }
+    /* Estilos para los enlaces de navegación en el encabezado */
+/* Ajuste del margen y tamaño de fuente de los enlaces de navegación */
+    /* Ajustes de los enlaces de navegación: se muestran en línea (para centrar), márgenes y tamaño de fuente */
+    /* Los enlaces de navegación se muestran uno por línea, centrados y con ancho limitado */
+    .header-right a {
+        margin-right: 30px;
+        font-size: 18px;
+    }
+    /* Ajuste de márgenes del contenido principal */
+    /* Ajustes del contenido principal: márgenes laterales, margen superior y texto centrado */
+    .main-content {
+        margin-left: 50px;
+        margin-top: 150px;
+    }
+    /* Ajuste del tamaño de fuente del título principal */
+    /* Ajuste del tamaño de fuente del título principal */
+    /* Ajuste del tamaño de fuente del título principal */
+    .main-content h1 {
+        font-size: 40px;
+    }
+    /* Ajuste de la altura y márgenes de la imagen principal */
+    /* Ajustes de la imagen principal: se quita el float, se muestra como bloque, altura automática, ancho máximo y se centra */
+    /* Ajuste del ancho máximo de la imagen principal */
+    div .hero-image {
+        height: 500px;
+        margin-top: -350px;
+        margin-right: 50px;
+    }
+}
+
+/* Estilos para móviles grandes y tabletas pequeñas (hasta 767px de ancho) */
+@media (max-width: 767px) {
+    /* Ajustes generales para pantallas de hasta 767px */
+    /* Estilos para el encabezado de la página */
+/* Ajustes para el encabezado: altura automática y centrado */
+    header {
+        height: auto;
+        text-align: center; /* Centrar contenido del header */
+    }
+    /* Contenedor para la parte izquierda del encabezado (logo y nombre de la empresa) */
+/* El logo y nombre de la empresa ocupan todo el ancho y se apilan */
+    .header-left {
+        display: block; /* Hacer que ocupe todo el ancho */
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    /* Ajuste del margen izquierdo del logo */
+    /* Ajustes del logo: sin margen izquierdo, menor altura y margen superior */
+    /* Ajuste de altura y margen superior del logo */
+    .header-left img {
+        margin-left: 0;
+        margin-top: 15px;
+        height: 40px;
+    }
+    /* Ajustes del nombre de la empresa: tamaño de fuente, interlineado y se muestra como bloque */
+    /* Ajuste del tamaño de fuente del nombre de la empresa */
+    .company-name {
+        font-size: 24px;
+        line-height: 1.2;
+        margin-top: 0;
+        display: block; /* Para que esté debajo del logo si es necesario */
+    }
+    /* Ajuste del margen derecho de los enlaces de navegación */
+    /* Los enlaces de navegación ocupan todo el ancho, se centran y se quita el float */
+    .header-right {
+        float: none; /* Quitar el float */
+        display: block; /* Hacer que ocupe todo el ancho */
+        width: 100%;
+        margin-right: 0;
+        margin-top: 10px;
+        line-height: normal; /* Resetear line-height */
+        text-align: center;
+    }
+    /* Estilos para los enlaces de navegación en el encabezado */
+/* Ajuste del margen y tamaño de fuente de los enlaces de navegación */
+    /* Ajustes de los enlaces de navegación: se muestran en línea (para centrar), márgenes y tamaño de fuente */
+    /* Los enlaces de navegación se muestran uno por línea, centrados y con ancho limitado */
+    .header-right a {
+        float: none; /* Quitar float de los enlaces */
+        display: inline-block; /* Para que se puedan centrar y tener margen */
+        margin: 5px 10px;
+        font-size: 16px;
+    }
+    /* Ajustes del botón de navegación: se muestra en línea (para centrar), padding y margen superior */
+    /* Ajustes del botón de navegación: padding, ancho y centrado */
+    #boton-navegacion {
+        display: inline-block; /* Para que se pueda centrar */
+        padding: 8px 15px;
+        margin-top: 10px;
+    }
+    /* Ajuste de márgenes del contenido principal */
+    /* Ajustes del contenido principal: márgenes laterales, margen superior y texto centrado */
+    .main-content {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 50px;
+        text-align: center; /* Centrar texto del contenido principal */
+    }
+    /* Ajuste del tamaño de fuente del título principal */
+    /* Ajuste del tamaño de fuente del título principal */
+    /* Ajuste del tamaño de fuente del título principal */
+    .main-content h1 {
+        font-size: 32px;
+    }
+    /* Ajuste del margen superior del subtítulo */
+    .headline-subtitle {
+        margin-top: -10px;
+    }
+    /* Ajuste del tamaño de fuente de los párrafos */
+    /* Ajuste del tamaño de fuente de los párrafos */
+    .main-content p {
+        font-size: 16px;
+    }
+    /* Ajuste del margen inferior del párrafo de descripción */
+    .description-paragraph {
+        margin-bottom: 30px;
+    }
+    /* Ajustes del botón de empezar: padding y tamaño de fuente */
+    /* Ajustes del botón de empezar: padding, tamaño de fuente, se muestra como bloque, ancho y centrado */
+    .start-button {
+        padding: 12px 25px;
+        font-size: 16px;
+    }
+    /* Ajuste de la altura y márgenes de la imagen principal */
+    /* Ajustes de la imagen principal: se quita el float, se muestra como bloque, altura automática, ancho máximo y se centra */
+    /* Ajuste del ancho máximo de la imagen principal */
+    div .hero-image {
+        float: none; /* Quitar float */
+        display: block; /* Hacer que ocupe todo el ancho */
+        height: auto; /* Altura automática para mantener proporción */
+        max-width: 80%; /* Ancho máximo para que no se desborde */
+        margin: 30px auto 0 auto; /* Centrar imagen */
+    }
+}
+
+/* Estilos para móviles pequeños (hasta 480px de ancho) */
+@media (max-width: 480px) {
+    /* Ajustes generales para pantallas de hasta 480px */
+    /* Ajuste del margen izquierdo del logo */
+    /* Ajustes del logo: sin margen izquierdo, menor altura y margen superior */
+    /* Ajuste de altura y margen superior del logo */
+    .header-left img {
+        height: 35px;
+        margin-top: 10px;
+    }
+    /* Ajustes del nombre de la empresa: tamaño de fuente, interlineado y se muestra como bloque */
+    /* Ajuste del tamaño de fuente del nombre de la empresa */
+    .company-name {
+        font-size: 20px;
+    }
+    /* Estilos para los enlaces de navegación en el encabezado */
+/* Ajuste del margen y tamaño de fuente de los enlaces de navegación */
+    /* Ajustes de los enlaces de navegación: se muestran en línea (para centrar), márgenes y tamaño de fuente */
+    /* Los enlaces de navegación se muestran uno por línea, centrados y con ancho limitado */
+    .header-right a {
+        display: block; /* Un enlace por línea */
+        margin: 8px auto; /* Centrar y espaciar */
+        width: 80%; /* Para que no ocupen todo el ancho y se vean mejor */
+        text-align: center;
+    }
+    /* Ajustes del botón de navegación: se muestra en línea (para centrar), padding y margen superior */
+    /* Ajustes del botón de navegación: padding, ancho y centrado */
+    #boton-navegacion {
+        padding: 10px 20px;
+        width: 60%;
+        margin: 10px auto;
+    }
+    /* Ajuste del tamaño de fuente del título principal */
+    /* Ajuste del tamaño de fuente del título principal */
+    /* Ajuste del tamaño de fuente del título principal */
+    .main-content h1 {
+        font-size: 28px;
+    }
+    /* Ajuste del tamaño de fuente de los párrafos */
+    /* Ajuste del tamaño de fuente de los párrafos */
+    .main-content p {
+        font-size: 14px;
+    }
+    /* Ajustes del botón de empezar: padding y tamaño de fuente */
+    /* Ajustes del botón de empezar: padding, tamaño de fuente, se muestra como bloque, ancho y centrado */
+    .start-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        display: block; /* Para que ocupe su línea y se pueda centrar */
+        width: 60%;
+        margin: 20px auto 0 auto;
+    }
+    /* Ajuste de la altura y márgenes de la imagen principal */
+    /* Ajustes de la imagen principal: se quita el float, se muestra como bloque, altura automática, ancho máximo y se centra */
+    /* Ajuste del ancho máximo de la imagen principal */
+    div .hero-image {
+        max-width: 90%;
+    }
+}
