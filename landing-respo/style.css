@@ -217,7 +217,7 @@ footer {
     }
 
     /* Ajustes de la Sección Derecha para Portátiles */
-    .sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+    .sec_rigth { 
         position: relative;
         top: 2rem;
         left: 4rem;
