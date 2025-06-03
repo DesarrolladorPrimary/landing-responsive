@@ -52,7 +52,7 @@ header nav ul li:first-child {
 
 /* Estilos para las Secciones Izquierda y Derecha */
 .sec_left,
-.sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+.sec_rigth {
     display: inline-block;
     vertical-align: top;
     width: 49%;
@@ -122,14 +122,14 @@ header nav ul li:first-child {
 }
 
 /* Estilos de la Sección Derecha */
-.sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+.sec_rigth { 
     position: relative;
     top: 6rem;
     left: 7rem;
 }
 
 /* Estilos de la Imagen en la Sección Derecha */
-.sec_rigth img { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+.sec_rigth img { 
     height: 40rem;
     width: 50rem;
     box-shadow: 3px 3px 10px;
@@ -224,7 +224,7 @@ footer {
     }
 
     /* Ajustes de la Imagen en la Sección Derecha para Portátiles */
-    .sec_rigth img { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+    .sec_rigth img {
         height: 30rem; /* Altura reducida */
         width: 44rem;  /* Ancho reducido */
         box-shadow: 3px 3px 10px;
@@ -290,13 +290,13 @@ footer {
     }
 
     /* Ajustes de la Sección Derecha para Tabletas */
-    .sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+    .sec_rigth { 
         top: 6rem;
         left: 4rem;
     }
 
     /* Ajustes de la Imagen en la Sección Derecha para Tabletas */
-    .sec_rigth img { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+    .sec_rigth img { 
         height: 20rem; /* Altura muy reducida */
         width: 40rem;  /* Ancho reducido */
         box-shadow: 3px 3px 10px;
@@ -382,7 +382,7 @@ footer {
     }
 
     /* Ocultar Sección Derecha en Móviles */
-    .sec_rigth { /* Nota: 'sec_rigth' podría tener un error tipográfico, debería ser 'sec_right' */
+    .sec_rigth { 
         display: none;
         left: 10px;
         margin-bottom: 4rem;
