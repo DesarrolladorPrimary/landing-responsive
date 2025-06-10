@@ -14,6 +14,7 @@ header {
 
 /* Estilos de la Barra de Navegación */
 nav {
+    display: none;
     border-bottom: 2px inherit black;
     height: 50px;
     text-align: center;
@@ -47,7 +48,9 @@ header nav ul li:first-child {
 
 /* Estilo para el Icono de Hamburguesa (inicialmente oculto) */
 .icon-h {
-    display: none;
+    font-size: 20px;
+    margin-left: 50px;
+    display: block;
 }
 
 /* Estilos para las Secciones Izquierda y Derecha */
@@ -170,7 +173,18 @@ footer {
 }
 
 /* Media Query para Portátiles (Mi Portatil) */
-@media (min-width:1025px) and (max-width:1600px) {
+@media (min-width:1025px){
+
+
+    .icon-h {
+      display: none;
+    }
+
+
+    nav {
+      display: block;
+    }
+
 
     /* Ajuste del Primer Elemento de Lista en la Navegación para Portátiles */
     header nav ul li:first-child {
